@@ -14,13 +14,11 @@ import org.springframework.data.elasticsearch.annotations.Setting;
 public class Person {
 
     @Id
-    @Getter
-    @Setter
+    @Getter @Setter
     @Field(type = FieldType.Keyword)
     private String id;
 
-    @Getter
-    @Setter
+    @Getter @Setter
     @Field(type = FieldType.Text)
     private String name;
 }
