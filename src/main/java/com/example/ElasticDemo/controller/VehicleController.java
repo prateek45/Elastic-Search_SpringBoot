@@ -5,6 +5,10 @@ import com.example.ElasticDemo.service.VehicleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+
+/**
+ * Class is used to manage the endpoints of index Vehicle
+ */
 @RestController
 @RequestMapping("/api/vehicle")
 public class VehicleController {

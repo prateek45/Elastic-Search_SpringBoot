@@ -7,6 +7,9 @@ import org.springframework.core.io.ClassPathResource;
 import java.io.File;
 import java.nio.file.Files;
 
+/**
+ * Class is used to load setting and property mappings of Indices
+ */
 public class Utility {
 
     private static final Logger LOG = LoggerFactory.getLogger(Utility.class);
