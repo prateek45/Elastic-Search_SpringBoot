@@ -5,6 +5,8 @@ import com.example.ElasticDemo.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class PersonService {
     private final PersonRepository repository;
@@ -20,5 +22,9 @@ public class PersonService {
 
     public Person findById(final String id) {
         return repository.findById(id).orElse(null);
+    }
+
+    public void saveAll(List<Person> persons) {
+        repository.saveAll(persons);
     }
 }
